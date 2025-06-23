@@ -1,37 +1,43 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Nunito', sans-serif;
   background-color: #fffafa;
   color: #2e2e2e;
   line-height: 1.8;
-  font-size: 16px;}
+  font-size: 16px;
+}
 
 .container {
   width: 90%;
   max-width: 1000px;
   margin:0 auto;
-  padding: 1rem ;}
+  padding: 1rem ;
+}
 
 header {
   background: linear-gradient(135deg, #f8cdda, #fbc2eb);
   color: #4a1c40;
   text-align: center;
-  padding: 100px 0 60px;}
+  padding: 100px 0 60px;
+}
 
 header h1 {
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 1px;}
+  letter-spacing: 1px;
+}
 
 header p {
   font-size: 1.2rem;
   color: #5e3b50;
   margin-top: 10px;
-  font-style: italic;}
+  font-style: italic;
+}
 
 .fancy-divider {
   width: 100px;
@@ -45,13 +51,15 @@ header p {
   border-bottom: 1px solid #f3d7e3;
   position: sticky;
   top: 0;
-  z-index: 999;}
+  z-index: 999;
+}
 
 .navbar .container {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem ;}
+  padding: 1rem ;
+}
 
 .navbar a {
   color: #8b305b;
@@ -59,7 +67,8 @@ header p {
   font-weight: 600;
   position: relative;
   padding-bottom: 6px;
-  transition: color 0.3s ease;}
+  transition: color 0.3s ease;
+}
 
 .navbar a::after {
   content: '';
@@ -69,20 +78,23 @@ header p {
   bottom: 0;
   left: 0;
   background-color: #ff87b2;
-  transition: 0.3s ease;}
+  transition: 0.3s ease;
+}
 
 .navbar a:hover {
-  color: #d63384;}
+  color: #d63384;
+}
 
 .navbar a:hover::after {
-  width: 100%;}
-
+  width: 100%;
+}
 
 .section h2 {
   font-size: 2rem;
   color: #b03c7c;
   margin-bottom: 24px;
-  padding-left: -30px;}
+  padding-left: -30px;
+}
 
 .section h2 i {
   size: 3.2rem;
@@ -90,34 +102,37 @@ header p {
   margin-bottom: 24px;
   margin-right: 10px;
   border-right: 6px solid #ffb6d5;
-   padding-right: 15px;
+  padding-right: 15px;
 }
-
 
 .section {
   padding: 1rem 0;
-  background-color: #fff0f5;}
+  background-color: #fff0f5;
+}
 
 .section:nth-of-type(even) {
-  background-color: #ffffff;}
-
+  background-color: #ffffff;
+}
 
 .section p {
   font-size: 1.08rem;
   color: #3f3f3f;
-  margin-bottom: 12px;}
+  margin-bottom: 12px;
+}
 
-  .section li {
+.section li {
   font-size: 0.9rem;
   color: #3f3f3f;
-  margin-bottom: 12px;}
+  margin-bottom: 12px;
+}
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   list-style: none;
-  margin-top: 10px;}
+  margin-top: 10px;
+}
 
 .skills-list li {
   background-color: #f8b4d9;
@@ -125,35 +140,39 @@ header p {
   padding: 10px 18px;
   border-radius: 30px;
   font-weight: 600;
-  transition: background 0.3s;}
+  transition: background 0.3s;
+}
 
 .skills-list li:hover {
-  background-color: #ec4899;}
+  background-color: #ec4899;
+}
 
-/* Experience & Education & Certifications Boxes */
 .item {
   padding: 20px;
   border-left: 4px solid #e98cbf;
   background-color: #fff5f8;
   margin-bottom: 30px;
-  border-radius: 10px;}
+  border-radius: 10px;
+}
 
 .item h3 {
   color: #842a5c;
   font-size: 1.2rem;
-  margin-bottom: 6px;}
+  margin-bottom: 6px;
+}
 
 .item h4 {
   color: #a55579;
   font-weight: normal;
   font-size: 1rem;
-  margin-bottom: 10px;}
-
+  margin-bottom: 10px;
+}
 
 #contact p {
   font-size: 1.05rem;
   margin-bottom: 10px;
-  color: #4b3f4e;}
+  color: #4b3f4e;
+}
 
 footer {
   background-color: #fbe4ec;
@@ -162,4 +181,87 @@ footer {
   padding: 24px 0;
   font-size: 0.95rem;
   margin-top: 60px;
-  border-top: 2px solid #f9c5d1; }
+  border-top: 2px solid #f9c5d1;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 0 40px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .section h2 {
+    font-size: 1.35rem;
+  }
+  .skills-list {
+    gap: 8px;
+  }
+  .skills-list li {
+    padding: 7px 12px;
+    font-size: 0.95rem;
+  }
+  .item {
+    padding: 15px;
+  }
+  .container {
+    width: 98%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 40px 0 25px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 0.92rem;
+  }
+  .fancy-divider {
+    width: 60px;
+    border-width: 2px;
+  }
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem;
+  }
+  .navbar a {
+    font-size: 1rem;
+    padding-bottom: 3px;
+  }
+  .section {
+    padding: 0.6rem 0;
+  }
+  .section h2 {
+    font-size: 1.1rem;
+  }
+  .skills-list {
+    gap: 5px;
+  }
+  .skills-list li {
+    padding: 5px 8px;
+    font-size: 0.85rem;
+  }
+  .item {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 14px 0;
+  }
+}
