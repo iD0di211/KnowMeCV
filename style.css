@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Import fonts*/
 body {
   font-family: 'Nunito', sans-serif;
   background-color: #fffafa;
@@ -11,27 +11,25 @@ body {
   line-height: 1.8;
   font-size: 16px;
 }
-
+/*containers styling*/
 .container {
   width: 90%;
   max-width: 1000px;
   margin:0 auto;
   padding: 1rem ;
 }
-
+/*header styling*/
 header {
   background: linear-gradient(135deg, #f8cdda, #fbc2eb);
   color: #4a1c40;
   text-align: center;
   padding: 100px 0 60px;
 }
-
 header h1 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
-
 header p {
   font-size: 1.2rem;
   color: #5e3b50;
@@ -46,6 +44,7 @@ header p {
   border-radius: 15px;
 }
 
+/*navegation bar styling*/
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #f3d7e3;
@@ -53,14 +52,12 @@ header p {
   top: 0;
   z-index: 999;
 }
-
 .navbar .container {
   display: flex;
   justify-content: center;
   gap: 1rem;
   padding: 1rem ;
 }
-
 .navbar a {
   color: #8b305b;
   text-decoration: none;
@@ -69,7 +66,6 @@ header p {
   padding-bottom: 6px;
   transition: color 0.3s ease;
 }
-
 .navbar a::after {
   content: '';
   position: absolute;
@@ -80,15 +76,14 @@ header p {
   background-color: #ff87b2;
   transition: 0.3s ease;
 }
-
 .navbar a:hover {
   color: #d63384;
 }
-
 .navbar a:hover::after {
   width: 100%;
 }
 
+/*sections styling*/
 .section h2 {
   font-size: 2rem;
   color: #b03c7c;
@@ -114,12 +109,14 @@ header p {
   background-color: #ffffff;
 }
 
+/*texts styling*/
 .section p {
   font-size: 1.08rem;
   color: #3f3f3f;
   margin-bottom: 12px;
 }
 
+/*Skills box Lists styling*/
 .section li {
   font-size: 0.9rem;
   color: #3f3f3f;
@@ -147,6 +144,7 @@ header p {
   background-color: #ec4899;
 }
 
+/*Experience, Education, Certifications boxes styling*/
 .item {
   padding: 20px;
   border-left: 4px solid #e98cbf;
@@ -168,12 +166,14 @@ header p {
   margin-bottom: 10px;
 }
 
+/*Contact box styling*/
 #contact p {
   font-size: 1.05rem;
   margin-bottom: 10px;
   color: #4b3f4e;
 }
 
+/*Footer styling*/
 footer {
   background-color: #fbe4ec;
   color: #7e2a5f;
@@ -184,6 +184,7 @@ footer {
   border-top: 2px solid #f9c5d1;
 }
 
+/*adjust layout in screens*/
 @media (max-width: 768px) {
   header {
     padding: 60px 0 40px;
